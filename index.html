@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Modo Tranquilidad Fiscal — Landing</title>
+  <meta name="description" content="Modo Tranquilidad Fiscal: el dashboard que ayuda a los autónomos en España a controlar cuotas e impuestos con calma y claridad." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Pequeños ajustes visuales */
+    .glass {
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    /* Hero decorative shapes */
+    .blob {
+      position: absolute;
+      filter: blur(56px);
+      opacity: 0.45;
+      transform: translateZ(0);
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="antialiased text-slate-900 bg-gradient-to-b from-slate-50 to-slate-100">
+
+  <!-- NAV -->
+  <header class="w-full py-6 bg-transparent fixed top-0 left-0 z-40">
+    <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-emerald-400 to-blue-500 flex items-center justify-center text-white font-semibold shadow-lg">TF</div>
+        <div class="text-lg font-semibold">Modo Tranquilidad Fiscal</div>
+      </a>
+      <nav class="hidden md:flex gap-6 items-center text-sm">
+        <a href="#features" class="hover:underline">Qué hace</a>
+        <a href="#how" class="hover:underline">Cómo funciona</a>
+        <a href="#gallery" class="hover:underline">Imágenes</a>
+        <a href="#contact" class="px-4 py-2 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700">Contactar</a>
+      </nav>
+      <div class="md:hidden">
+        <button id="mobileBtn" class="p-2 rounded-md glass">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-800" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="pt-28">
+    <section class="relative overflow-hidden">
+      <!-- Decorative blobs -->
+      <div class="blob bg-emerald-300 rounded-full w-[420px] h-[420px] -left-40 -top-24"></div>
+      <div class="blob bg-blue-300 rounded-full w-[360px] h-[360px] -right-40 -top-12"></div>
+
+      <div class="max-w-6xl mx-auto px-6 py-20 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <!-- Left: copy -->
+          <div class="space-y-6">
+            <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+              Recupera la calma con tus impuestos<br/>
+              <span class="bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-blue-600">Modo Tranquilidad Fiscal</span>
+            </h1>
+            <p class="text-slate-600 text-lg">
+              Un dashboard inteligente que combina datos reales y señales emocionales para que los autónomos en España controlen cuotas, pagos y obligaciones sin estrés.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="#contact" class="inline-flex items-center justify-center gap-3 px-6 py-3 rounded-md bg-blue-600 text-white shadow hover:bg-blue-700">
+                Probar versión Beta
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-90" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-8.414V6a1 1 0 112 0v3.586l1.707-1.707a1 1 0 111.414 1.414L11 13l-4.121-4.121a1 1 0 011.414-1.414L9 9.586z" clip-rule="evenodd"/></svg>
+              </a>
+              <a href="#how" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md border border-slate-200 bg-white hover:shadow">Cómo funciona</a>
+            </div>
+
+            <div class="mt-3 text-sm text-slate-500">
+              <strong>Sin sorpresas:</strong> recordatorios claros, predicción de pagos y micro-consejos para estar siempre tranquilo.
+            </div>
+
+            <!-- trust / quick facts -->
+            <div class="mt-6 grid grid-cols-3 gap-3 text-sm">
+              <div class="p-3 bg-white rounded-lg shadow-sm text-center">
+                <div class="text-xs text-slate-400">Ahorro medio</div>
+                <div class="text-lg font-semibold">+8%</div>
+              </div>
+              <div class="p-3 bg-white rounded-lg shadow-sm text-center">
+                <div class="text-xs text-slate-400">Usuarios beta</div>
+                <div class="text-lg font-semibold">>500</div>
+              </div>
+              <div class="p-3 bg-white rounded-lg shadow-sm text-center">
+                <div class="text-xs text-slate-400">Integrable con</div>
+                <div class="text-lg font-semibold">Bancos y ERPs</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: mockup panel -->
+          <div class="relative">
+            <div class="rounded-2xl shadow-2xl overflow-hidden glass p-6">
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <div class="text-xs text-slate-400">Estado fiscal</div>
+                  <div class="text-sm font-medium">Nivel de tranquilidad</div>
+                </div>
+                <div class="text-sm font-semibold text-slate-700">Trimestre actual</div>
+              </div>
+
+              <!-- Gauge -->
+              <div class="flex items-center gap-4">
+                <div class="w-28 h-28 rounded-full bg-gradient-to-tr from-emerald-400 to-blue-500 flex items-center justify-center text-white text-xl font-bold">
+                  78
+                </div>
+                <div class="flex-1">
+                  <div class="text-sm text-slate-500">Tienes <span class="font-semibold text-slate-700">2 pagos</span> próximos</div>
+                  <div class="mt-4">
+                    <div class="w-full h-3 bg-slate-200 rounded-full overflow-hidden">
+                      <div class="h-3 bg-gradient-to-r from-emerald-500 to-emerald-300 rounded-full" style="width:62%"></div>
+                    </div>
+                    <div class="mt-2 text-xs text-slate-400">Fondos reservados: <strong>62%</strong></div>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-4 border-slate-100"/>
+
+              <div class="grid grid-cols-1 gap-3">
+                <div class="p-3 bg-white rounded-lg">
+                  <div class="text-xs text-slate-400">Siguiente cuota SS</div>
+                  <div class="flex items-center justify-between">
+                    <div class="text-sm font-medium">€410</div>
+                    <div class="text-xs text-slate-400">Vence: 20 Apr</div>
+                  </div>
+                </div>
+
+                <div class="p-3 bg-white rounded-lg">
+                  <div class="text-xs text-slate-400">IVA estimado (trimestre)</div>
+                  <div class="flex items-center justify-between">
+                    <div class="text-sm font-medium">€1,250</div>
+                    <div class="text-xs text-slate-400">Reserva sugerida: 20%</div>
+                  </div>
+                </div>
+
+                <div class="p-3 bg-white rounded-lg flex items-center justify-between text-xs">
+                  <div>Microtip</div>
+                  <div class="text-slate-500">Sube tus facturas antes del 18 y reduce errores</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- small badges -->
+            <div class="flex gap-3 mt-4">
+              <div class="px-3 py-2 bg-white rounded-lg shadow text-sm">Integración bancaria</div>
+              <div class="px-3 py-2 bg-white rounded-lg shadow text-sm">Recordatorios</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="max-w-6xl mx-auto px-6 py-14">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl p-6 shadow">
+          <h3 class="font-semibold text-lg">Índice de Tranquilidad</h3>
+          <p class="mt-2 text-slate-500 text-sm">Un solo número que resume tu estado fiscal y te indica acciones concretas para mejorar.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow">
+          <h3 class="font-semibold text-lg">Predicción de Pagos</h3>
+          <p class="mt-2 text-slate-500 text-sm">Proyecciones en tiempo real basadas en tus ingresos y gastos (sin sorpresas al final del trimestre).</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow">
+          <h3 class="font-semibold text-lg">Microintervenciones</h3>
+          <p class="mt-2 text-slate-500 text-sm">Mensajes amigables y acciones guiadas para reducir la ansiedad y evitar errores comunes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="bg-slate-50 py-14">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 class="text-2xl font-bold">Cómo funciona — en 3 pasos</h2>
+            <ol class="mt-6 space-y-4 text-slate-600">
+              <li><span class="font-semibold">1.</span> Conecta (o introduce) tus ingresos y gastos básicos.</li>
+              <li><span class="font-semibold">2.</span> El sistema calcula previsiones y te muestra tu índice de tranquilidad.</li>
+              <li><span class="font-semibold">3.</span> Sigue las recomendaciones simples y recibe alertas antes de cada vencimiento.</li>
+            </ol>
+
+            <p class="mt-6 text-slate-500">Todo con un lenguaje claro, micro-lecciones y la posibilidad de delegar tareas cuando lo prefieras.</p>
+          </div>
+
+          <div>
+            <div class="bg-white rounded-xl p-6 shadow">
+              <h4 class="font-semibold">Para quién</h4>
+              <ul class="mt-3 text-slate-600 space-y-2">
+                <li>Autónomos nuevos que quieren entender lo esencial.</li>
+                <li>Profesionales con ingresos irregulares que planifican caja.</li>
+                <li>Trabajadores que buscan reducir el estrés fiscal.</li>
+              </ul>
+              <div class="mt-4">
+                <a href="#contact" class="inline-block px-4 py-2 bg-emerald-500 text-white rounded hover:bg-emerald-600">Quiero probarlo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY / IMAGES (user-provided URLs) -->
+    <section id="gallery" class="max-w-6xl mx-auto px-6 py-14">
+      <h3 class="text-xl font-semibold mb-6">Imágenes y recursos (fuentes)</h3>
+      <p class="text-sm text-slate-500 mb-4">Aquí se muestran las imágenes que facilitaste. Para producción se recomienda subir los assets directos al CDN o servidor y reemplazar las rutas por URLs directas de imagen.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Image 1 -->
+        <div class="bg-white rounded-xl p-4 shadow">
+          <a href="https://www.freepik.es/foto-gratis/pareja-administrando-presupuesto-juntos-cocina_9617040.htm#fromView=search&page=2&position=19&uuid=cb46b2dd-54ac-4d07-8df6-36fc34f2291e&query=Freelancers+impuestos" target="_blank" rel="noopener noreferrer">
+            <img src="https://www.freepik.es/foto-gratis/pareja-administrando-presupuesto-juntos-cocina_9617040.htm#fromView=search&page=2&position=19&uuid=cb46b2dd-54ac-4d07-8df6-36fc34f2291e&query=Freelancers+impuestos" alt="Pareja administrando presupuesto (Freepik)" class="w-full h-48 object-cover rounded-md"/>
+          </a>
+          <div class="mt-3 text-sm text-slate-600">
+            Pareja administrando presupuesto. Fuente: Freepik (enlace arriba).
+          </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="bg-white rounded-xl p-4 shadow">
+          <a href="https://www.freepik.es/foto-gratis/pareja-deprimida-frente-problemas-credito-esposa-estresada-luciendo-exhausta-mientras-hace-cuentas-casa-esfuerza-recortar-gastos-familiares-sostiene-pluma-hace-calculos-necesarios-calculadora_9532777.htm#fromView=search&page=1&position=29&uuid=cb46b2dd-54ac-4d07-8df6-36fc34f2291e&query=Freelancers+impuestos" target="_blank" rel="noopener noreferrer">
+            <img src="https://www.freepik.es/foto-gratis/pareja-deprimida-frente-problemas-credito-esposa-estresada-luciendo-exhausta-mientras-hace-cuentas-casa-esfuerza-recortar-gastos-familiares-sostiene-pluma-hace-calculos-necesarios-calculadora_9532777.htm#fromView=search&page=1&position=29&uuid=cb46b2dd-54ac-4d07-8df6-36fc34f2291e&query=Freelancers+impuestos" alt="Pareja estresada por deudas (Freepik)" class="w-full h-48 object-cover rounded-md"/>
+          </a>
+          <div class="mt-3 text-sm text-slate-600">
+            Imagen representativa de estrés financiero. Fuente: Freepik (enlace arriba).
+          </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="bg-white rounded-xl p-4 shadow">
+          <a href="https://www.freepik.es/foto-gratis/familia-infeliz-joven-que-paga-facturas-servicios-publicos-linea-computadora-portatil-hombre-estresado-sentado-mesa-documentos-calculadora-rellenando-papeles-calculando-gastos-domesticos-junto-su-bonita-esposa_9532914.htm#fromView=search&page=2&position=46&uuid=cb46b2dd-54ac-4d07-8df6-36fc34f2291e&query=Freelancers+impuestos" target="_blank" rel="noopener noreferrer">
+            <img src="https://www.freepik.es/foto-gratis/familia-infeliz-joven-que-paga-facturas-servicios-publicos-linea-computadora-portatil-hombre-estresado-sentado-mesa-documentos-calculadora-rellenando-papeles-calculando-gastos-domesticos-junto-su-bonita-esposa_9532914.htm#fromView=search&page=2&position=46&uuid=cb46b2dd-54ac-4d07-8df6-36fc34f2291e&query=Freelancers+impuestos" alt="Familia preocupada por facturas (Freepik)" class="w-full h-48 object-cover rounded-md"/>
+          </a>
+          <div class="mt-3 text-sm text-slate-600">
+            Familia calculando facturas. Fuente: Freepik (enlace arriba).
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FORM -->
+    <section id="contact" class="max-w-6xl mx-auto px-6 py-14">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        <div class="space-y-4">
+          <h3 class="text-2xl font-bold">Quiero probar la Beta</h3>
+          <p class="text-slate-600">Déjanos tus datos y te contactamos para acceder a la versión inicial y recibir una demo personalizada.</p>
+
+          <div class="bg-white rounded-xl p-6 shadow">
+            <div class="text-sm text-slate-500">Contacto directo</div>
+            <div class="mt-2 font-medium">Nil Busquets</div>
+            <div class="text-sm text-slate-500">Email: <a href="mailto:nilbusquets94@gmail.com" class="text-blue-600">nilbusquets94@gmail.com</a></div>
+          </div>
+        </div>
+
+        <div>
+          <!--
+            FORM:
+            - Action currently points to /submit as a placeholder.
+            - Replace action="/submit" with your real endpoint, e.g. action="https://mi-backend.com/contact"
+            - The form uses method POST and sends form-data (multipart/form-data is not necessary here).
+          -->
+          <form id="contactForm" action="/submit" method="POST" class="bg-white rounded-xl p-6 shadow space-y-4" novalidate>
+            <input type="hidden" name="source" value="landing-modo-tranquilidad-fiscal" />
+            <div>
+              <label class="text-sm font-medium">Nombre</label>
+              <input name="name" required class="mt-2 block w-full rounded-md border border-slate-200 px-4 py-2 focus:ring-2 focus:ring-emerald-400" placeholder="Tu nombre completo" />
+            </div>
+            <div>
+              <label class="text-sm font-medium">Email</label>
+              <input name="email" type="email" required class="mt-2 block w-full rounded-md border border-slate-200 px-4 py-2 focus:ring-2 focus:ring-emerald-400" placeholder="tu@correo.com" />
+            </div>
+            <div>
+              <label class="text-sm font-medium">Actividad</label>
+              <input name="activity" class="mt-2 block w-full rounded-md border border-slate-200 px-4 py-2 focus:ring-2 focus:ring-emerald-400" placeholder="Diseñador, consultor, electricista..." />
+            </div>
+            <div>
+              <label class="text-sm font-medium">Mensaje / ¿Qué necesitas?</label>
+              <textarea name="message" rows="4" class="mt-2 block w-full rounded-md border border-slate-200 px-4 py-2 focus:ring-2 focus:ring-emerald-400" placeholder="Cuéntanos brevemente tu situación..."></textarea>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <button type="submit" class="px-5 py-3 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700">Enviar</button>
+              <button type="button" id="demoBtn" class="px-4 py-3 border border-slate-200 rounded-md hover:bg-slate-50">Solicitar demo</button>
+            </div>
+
+            <div class="text-xs text-slate-400">Al enviar aceptas que usemos tus datos para gestionar la prueba beta. No compartimos tus datos con terceros.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-12 py-8 bg-white border-t">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="text-sm text-slate-600">Modo Tranquilidad Fiscal — beta © <span id="year"></span></div>
+        <div class="text-sm text-slate-600">Contacto: <a href="mailto:nilbusquets94@gmail.com" class="text-blue-600">nilbusquets94@gmail.com</a></div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // small UI behaviour
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // mobile menu toggle (simple demo)
+    const mobileBtn = document.getElementById('mobileBtn');
+    mobileBtn && mobileBtn.addEventListener('click', () => {
+      alert('Menu móvil (demo). En producción sustituir por menú real.');
+    });
+
+    // demo button opens contact form anchor
+    document.getElementById('demoBtn').addEventListener('click', () => {
+      location.href = '#contact';
+      // highlight form briefly
+      const form = document.getElementById('contactForm');
+      form.classList.add('ring-2','ring-emerald-200');
+      setTimeout(()=> form.classList.remove('ring-2','ring-emerald-200'), 2000);
+    });
+
+    // Basic client-side validation and submission handling (demo)
+    const form = document.getElementById('contactForm');
+    form && form.addEventListener('submit', async (e) => {
+      // For demo: prevent default and show success toast (remove when integrating backend)
+      e.preventDefault();
+
+      // Basic required check
+      const name = form.querySelector('[name="name"]').value.trim();
+      const email = form.querySelector('[name="email"]').value.trim();
+      if (!name || !email) {
+        alert('Por favor completa nombre y email.');
+        return;
+      }
+
+      // Show success message (replace by real fetch to your endpoint)
+      const originalBtn = form.querySelector('button[type="submit"]');
+      originalBtn.disabled = true;
+      originalBtn.textContent = 'Enviando...';
+
+      // Simulate network
+      setTimeout(() => {
+        originalBtn.disabled = false;
+        originalBtn.textContent = 'Enviar';
+        alert('Gracias — tu solicitud ha sido registrada. Te contactaremos en breve.');
+        form.reset();
+        location.hash = '#contact';
+      }, 900);
+    });
+  </script>
+
+</body>
+</html>
